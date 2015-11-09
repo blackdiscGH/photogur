@@ -54,6 +54,8 @@ Rails.application.routes.draw do
   #     resources :products
   #   end
 
+delete 'pictures/:id' => 'pictures#destroy', as: "delete_picture"
+
 root 'pictures#index'
 
 get 'pictures' => 'pictures#index'
