@@ -55,5 +55,6 @@ Rails.application.routes.draw do
   #   end
 
 get 'pictures' => 'pictures#index'
+get 'pictures/:id' => 'pictures#show', as: 'picture'
 
 end
