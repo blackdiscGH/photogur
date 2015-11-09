@@ -54,6 +54,8 @@ Rails.application.routes.draw do
   #     resources :products
   #   end
 
+root 'pictures#index'
+
 get 'pictures' => 'pictures#index'
 
 post 'pictures' => 'pictures#create'
